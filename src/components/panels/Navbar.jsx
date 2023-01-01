@@ -1,11 +1,11 @@
 import "./Navbar.css";
 
-const Navbar = ({children}) => {
+const Navbar = ({ children }) => {
   return (
-      <div className="Navbar">
-      {children}
-      </div>
-  )
-}
+    <div className="Navbar">
+      <div className="Navbar-Content">{children}</div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
