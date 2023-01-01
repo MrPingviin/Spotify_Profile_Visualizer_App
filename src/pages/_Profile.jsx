@@ -18,7 +18,7 @@ return (
     <MainContent>
     <ProfileCard>
         <ProfileAvatar src={userDataContainer[0].images[0].url} onClick={() => window.location.href = "https://open.spotify.com/user/mrpingviin"} width="50%" className="Rounded Clickable"/>
-        <ProfileName onClick={() => window.location.href = "https://open.spotify.com/user/mrpingviin"}>{userDataContainer[0].display_name}</ProfileName>
+        <ProfileName onClick={() => window.location.href = userDataContainer[0].href}>{userDataContainer[0].display_name}</ProfileName>
         <ProfileType type={userDataContainer[0].product}/>
         <ProfileStats/>
         <Button onClick={() => (setActualPage("Login")) (logout())} className="Outlined">Logout</Button>
