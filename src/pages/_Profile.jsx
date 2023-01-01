@@ -12,7 +12,7 @@ import { userDataContainer} from "../logic/dataContainers";
 import { userTopTracks } from "../logic/dataContainers";
 
 
-const _Profile = ({setActualPage}) => {
+const _Profile = ({setActualPage, setActualCategory}) => {
 console.log("SOROS", userDataContainer)
 return (
     <MainContent>

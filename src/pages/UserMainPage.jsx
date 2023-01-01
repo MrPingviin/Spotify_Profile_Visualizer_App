@@ -73,7 +73,7 @@ const UserMainPage = ({ setActualPage }) => {
         <Navitem icon={<AiFillGithub className="GitHub" />} />
       </Navbar>
       <MainPart>
-        {isLoading ? (<LoadingScreen/>) : <CategoryRouter actualCategory={actualCategory} setActualPage={setActualPage}/>}
+        {isLoading ? (<LoadingScreen/>) : <CategoryRouter actualCategory={actualCategory} setActualPage={setActualPage} setActualCategory={setActualCategory}/>}
       </MainPart>
     </PageContent>
   );
