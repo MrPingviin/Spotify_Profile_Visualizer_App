@@ -1,5 +1,5 @@
 # Spotify Visualizer WebApp
-(React, NodeJS/Express)
+(React, NodeJS/Express, SpotifyAPI)
 
 ### Subtitle
 WIP! Documentation is coming soon!
