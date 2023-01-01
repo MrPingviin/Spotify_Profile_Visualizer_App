@@ -6,7 +6,7 @@ export const getToken = async (code) => {
     url: "https://accounts.spotify.com/api/token",
     body: new URLSearchParams({
       code: `${code}`,
-      redirect_uri: "http://localhost:5173/",
+      redirect_uri: "https://spotify-profile-visualizer-app.vercel.app/",
       grant_type: "authorization_code",
       client_id: `${client_id}`,
       client_secret: `${client_secret}`,
