@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  transition: filter 0.05s, color 0.05s, border 0.10s, background-color 0.10s;
+  font-family: Gotham;
+  color: white;
+  user-select: none;
+  animation: popup 0.15s linear forwards;
+  opacity: 0;
+  list-style: none;
+ 
+}
+
+html, body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #0f0f0f;
+  opacity: 1;
+  /* Temporary solution */
+  overflow-x: hidden; 
+}
+
+#root {
+  min-height: 100vh;
+  width: 100vw;
+  
+}
+
+.loginPage, .registerPage, .spotiLoginPage{
+  display: flex;
+  justify-content: center;
+  align-item: center;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.userMainPage {
+  height: 100%;
+  width: 100%;
+  
+}
+
+@font-face {
+  font-family: Gotham-Bold;
+  src: url("./assets/fonts/Gotham-Black.otf");
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("./assets/fonts/GothamMedium.ttf");
+}
+
+@font-face {
+  font-family: Gotham-Light;
+  src: url("./assets/fonts/GothamLight.ttf");
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+

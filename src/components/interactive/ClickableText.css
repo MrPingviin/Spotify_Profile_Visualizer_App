@@ -1,0 +1,10 @@
+
+.ClickableText {
+    filter: brightness(90%);
+    color: #19E68C;
+}
+
+.ClickableText:hover {
+ color: white;
+ cursor: pointer;
+}

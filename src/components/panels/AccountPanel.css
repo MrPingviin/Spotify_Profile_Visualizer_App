@@ -1,0 +1,16 @@
+
+
+.AccountPanel {
+    display: flex;
+    flex-direction: column;
+    background-color: #242424;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    gap: 1.25rem;
+
+    
+}
+
+.AccountPanel p {
+    font-size: 1rem;
+}

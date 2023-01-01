@@ -1,0 +1,11 @@
+.TopArtist {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+   
+}
+
+.Rounded {
+    border-radius: 50rem;
+}

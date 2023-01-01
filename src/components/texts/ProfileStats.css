@@ -1,0 +1,26 @@
+
+
+.ProfileStats {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ProfileStats_Subcategory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.ProfileStats_Stat {
+    font-family: Gotham-Bold;
+    font-size: 1.2rem;
+    color: #19E68C;
+}
+
+.ProfileStats_StatTitle {
+    font-family: Gotham;
+    font-size: 0.85rem;
+}

@@ -1,0 +1,27 @@
+.Button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #19E68C;
+    font-weight: bold;
+}
+
+.Button:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.Outlined {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 0.15rem solid white;
+    background-color: #0f0f0f;
+}
+
+.Outlined:hover {
+    background-color: #19E68C;
+    border: 0.15rem solid #19E68C;
+    cursor: pointer;
+}

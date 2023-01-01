@@ -1,0 +1,32 @@
+.TopCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 90%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.Headbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Options {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+   
+}
