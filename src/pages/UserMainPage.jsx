@@ -70,10 +70,10 @@ const UserMainPage = ({ setActualPage }) => {
           icon={<RiPlayListFill className="Navicon" />}
           onClick={() => alert("WIP!")}
         />
-        <Navitem icon={<AiFillGithub className="GitHub" />} />
+        <Navitem icon={<AiFillGithub className="GitHub" />} onClick={() => window.location.href = "https://github.com/MrPingviin/Spotify_Profile_Visualizer_App/"} />
       </Navbar>
       <MainPart>
-        {isLoading ? (<LoadingScreen/>) : <CategoryRouter actualCategory={actualCategory} setActualPage={setActualPage} setActualCategory={setActualCategory}/>}
+        {isLoading ? (<LoadingScreen/>) : <CategoryRouter actualCategory={actualCategory} setActualPage={setActualPage} setActualCategory={}/>}
       </MainPart>
     </PageContent>
   );
