@@ -25,8 +25,8 @@ return (
         <Button onClick={() => (setActualPage("Login")) (logout())} className="Outlined">Logout</Button>
     </ProfileCard>
     <Splitter>
-      <Toplist title="Top Artists of All Time" onClick={() => setActualCategory("Top_Artists")} type="Artist" short="true"></Toplist>
-      <Toplist title="Top Tracks of All Time" onClick={() => setActualCategory("Top_Tracks")} type="Song" short="true"></Toplist>
+      <Toplist title="Top Artists of All Time" onClick={() => (setActualCategory("Top_Artists")) (window.location.href = "#")} type="Artist" short="true"></Toplist>
+      <Toplist title="Top Tracks of All Time" onClick={() => (setActualCategory("Top_Tracks")) (window.location.href = "#")} type="Song" short="true"></Toplist>
     </Splitter>
 </MainContent>
 )
