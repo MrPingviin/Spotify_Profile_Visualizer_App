@@ -41,7 +41,7 @@ const UserMainPage = ({ setActualPage }) => {
           <TotalCenter>
             <SpotilogoNoText
               width="60vw"
-              onClick={() => setActualCategory("Home")}
+              onClick={() => (setActualCategory("Home")) (window.location.href = "#")}
             />
           </TotalCenter>
         </Clickable>
@@ -51,27 +51,27 @@ const UserMainPage = ({ setActualPage }) => {
         <Navitem
           text="Home"
           icon={<AiFillHome className="Navicon" />}
-          onClick={() => setActualCategory("Home")}
+          onClick={() => setActualCategory("Home") (window.location.href = "#")}
         />
         <Navitem
           text="Top Artists"
           icon={<GiMicrophone className="Navicon" />}
-          onClick={() => setActualCategory("Top_Artists")}
+          onClick={() => setActualCategory("Top_Artists") (window.location.href = "#")}
         />
         <Navitem
           text="Top Tracks"
           icon={<BsMusicNoteBeamed className="Navicon" />}
-          onClick={() => setActualCategory("Top_Tracks")}
+          onClick={() => setActualCategory("Top_Tracks") (window.location.href = "#")}
         />
         <Navitem
           text="Recent"
           icon={<AiOutlineReload className="Navicon" />}
-          onClick={() => setActualCategory("Recent")}
+          onClick={() => setActualCategory("Recent") (window.location.href = "#")}
         />
         <Navitem
           text="Playlists"
           icon={<RiPlayListFill className="Navicon" />}
-          onClick={() => setActualCategory("Playlists")}
+          onClick={() => setActualCategory("Playlists") (window.location.href = "#")}
         />
         <Navitem
           icon={<AiFillGithub className="GitHub" />}
