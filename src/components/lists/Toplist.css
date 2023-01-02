@@ -49,6 +49,7 @@
     }
 
     .Toplist_Top {
-        justify-content: center;
+        flex-direction: column;
+        align-content: center;
     }
 }
