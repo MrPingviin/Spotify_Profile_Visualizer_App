@@ -14,3 +14,10 @@
 .AccountPanel p {
     font-size: 1rem;
 }
+
+@media screen and (max-width: 1050px) {
+    .AccountPanel {
+        width: 100vw;
+        height: 100vh;
+    }
+}
