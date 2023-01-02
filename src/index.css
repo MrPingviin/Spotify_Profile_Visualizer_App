@@ -3,7 +3,7 @@
   margin: 0;
   transition: filter 0.05s, color 0.05s, border 0.10s, background-color 0.10s;
   //font-family: Gotham, Arial, Helvetica, sans-serif;
-  font-family: Gotham, GothamMedium, GothamBook, Arial, Helvetica, sans-serif;
+  font-family: Gotham-Light, Gotham, GothamMedium, GothamBook, Arial, Helvetica, sans-serif;
   color: white;
   user-select: none;
   animation: popup 0.15s linear forwards;
@@ -19,6 +19,7 @@ html, body {
   opacity: 1;
   /* Temporary solution */
   overflow-x: hidden; 
+  font-family: Gotham-Light, Gotham, GothamMedium, GothamBook, Arial, Helvetica, sans-serif;
 }
 
 #root {
