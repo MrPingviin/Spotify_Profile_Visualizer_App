@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   transition: filter 0.05s, color 0.05s, border 0.10s, background-color 0.10s;
-  font-family: Gotham;
+  font-family: Gotham, Arial;
   color: white;
   user-select: none;
   animation: popup 0.15s linear forwards;
