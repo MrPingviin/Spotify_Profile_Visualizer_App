@@ -36,3 +36,19 @@
     flex-direction: column;
     width: 100%
 }
+
+@media screen and (max-width: 1050px) {
+
+    .Toplist, .ToplistWide {
+        padding-top: 2rem;
+        padding-bottom: 7.5rem;
+    }
+
+    .Toplist_Body {
+        justify-content: center;
+    }
+
+    .Toplist_Top {
+        justify-content: center;
+    }
+}

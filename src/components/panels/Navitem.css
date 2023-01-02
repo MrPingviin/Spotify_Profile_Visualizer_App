@@ -35,3 +35,19 @@
     cursor: pointer;
 
 }
+
+@media screen and (max-width: 1050px) { 
+
+    .Navitem {
+        font-size: 0.60rem;
+    }
+
+    .Navitem-Version {
+        display: none;
+    }
+
+    .GitHub {
+        display: none;
+    }
+
+}

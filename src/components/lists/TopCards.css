@@ -4,9 +4,9 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
-    width: 90%;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    width: 90%;
 
 }
 
@@ -23,10 +23,25 @@
     gap: 1rem;
 }
 
+
 .Content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    grid-gap: 1rem;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-   
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .Headbar {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .TopCards {
+        padding-top: 2rem;
+    }
+  
 }

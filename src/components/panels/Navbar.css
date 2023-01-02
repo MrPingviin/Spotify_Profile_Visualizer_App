@@ -20,4 +20,38 @@
 
 }
 
+@media screen and (max-width: 1050px) {
+  .Navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100vw;
+    background-color: #242424;
+    justify-content: center;
+    bottom: 0;
+    padding: 2rem 0rem;
+    gap: 0rem;
+    z-index: 900;
+    min-width: 0rem;
+    border-top: 0.25rem solid #19E68C;
+  }
 
+  .Navbar-Content div:nth-child(8) {
+    display: none;
+  }
+
+  .Navbar img,
+  hr {
+    display: none;
+  }
+
+  .Navbar-Content {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 2rem 0rem;
+  }
+}

@@ -2,6 +2,7 @@ import "./ProfileStats.css";
 import { userDataContainer } from "../../logic/dataContainers";
 import { getFollowedArtists } from "../../logic/getFollowedArtists";
 import { userFollowedArtists } from "../../logic/dataContainers";
+import { userPlaylists } from "../../logic/dataContainers";
 
 const ProfileStats = () => {
   return (
@@ -17,7 +18,7 @@ const ProfileStats = () => {
       </div>
 
       <div className="ProfileStats_Subcategory">
-        <span className="ProfileStats_Stat">BEFEJEZNI</span>
+        <span className="ProfileStats_Stat">{userPlaylists[0].items.length}</span>
         <span className="ProfileStats_StatTitle">PLAYLISTS</span>
       </div>
     </div>

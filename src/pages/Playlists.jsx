@@ -6,9 +6,9 @@ import { userPlaylistTrackCounts } from "../logic/dataContainers";
 const Playlists = () => {
     let count = -1;
   return (
-    <>
       <TopCards
         title="Playlists"
+        type="Playlists"
         onClick1={() => alert("WIP!")}
         onClick2={() => alert("WIP!")}
         onClick3={() => alert("WIP!")}
@@ -21,8 +21,8 @@ const Playlists = () => {
                 src={item.images[0].url}
                 playlistName={item.name}
                 trackNumber={userPlaylistTrackCounts[count].total}
-                height="200rem"
-                width="200rem"
+                height="220rem"
+                width="220rem"
                 className="Clickable"
                 onClick={() =>
                   (window.location.href = item.external_urls.spotify)
@@ -32,11 +32,11 @@ const Playlists = () => {
           } else {
             return (
               <Image
-                src={""}
+                src={"./dummy_image.webp"}
                 playlistName={item.name}
                 trackNumber={userPlaylistTrackCounts[count].total}
-                height="200rem"
-                width="200rem"
+                height="220rem"
+                width="220rem"
                 className="Clickable"
                 onClick={() =>
                   (window.location.href = item.external_urls.spotify)
@@ -46,7 +46,6 @@ const Playlists = () => {
           }
         })}
       </TopCards>
-    </>
   );
 };
 

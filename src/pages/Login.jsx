@@ -17,9 +17,11 @@ const LoginPage = ({ setActualPage }) => {
         {/* //! ----- TEMPORARY TEXT, SUBJECT TO DELETE IN THE NEAR FUTURE PATCH */}
         <div>
           <center>
-            <h2>🚧Attention! This function is still WIP!🚧</h2>
+            <h3>🚧Attention! This function is still WIP!🚧</h3>
           </center>
-          <h3>🚧Please use the login with Spotify option at the bottom!🚧</h3>
+          <center>
+          <h4>🚧Please use the login with Spotify option at the bottom!🚧</h4>
+          </center>
         </div>
         {/* //! ----- TEMPORARY TEXT, SUBJECT TO DELETE IN THE NEAR FUTURE PATCH */}
 

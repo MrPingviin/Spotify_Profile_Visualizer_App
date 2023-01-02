@@ -13,12 +13,15 @@ const RegisterPage = ({ setActualPage }) => {
         <TotalCenter>
           <Spotilogo width="70%" />
         </TotalCenter>
+        
         {/* //! ----- TEMPORARY TEXT, SUBJECT TO DELETE IN THE NEAR FUTURE PATCH */}
         <div>
           <center>
-            <h2>🚧Attention! This function is still WIP!🚧</h2>
+            <h3>🚧Attention! This function is still WIP!🚧</h3>
           </center>
-          <h3>🚧Please use the login with Spotify option at the bottom!🚧</h3>
+          <center>
+          <h4>🚧Please use the login with Spotify option at the bottom!🚧</h4>
+          </center>
         </div>
         {/* //! ----- TEMPORARY TEXT, SUBJECT TO DELETE IN THE NEAR FUTURE PATCH */}
         <h1>Create an Account</h1>
@@ -45,8 +48,8 @@ const RegisterPage = ({ setActualPage }) => {
             Or login by one click with{" "}
             <ClickableText
               onClick={() =>
-                //(window.location.href = "http://accounts.spotify.com/authorize?client_id=41d86423893746dcaf5c73b7085a6eb8&response_type=code&redirect_uri=https://spotify-profile-visualizer-app.vercel.app/&show_dialog=true&scope=user-read-private%20user-library-read%20user-read-email%20playlist-read-private%20user-read-recently-played%20user-follow-read%20user-read-playback-state%20user-top-read")
-                (window.location.href = "http://accounts.spotify.com/authorize?client_id=41d86423893746dcaf5c73b7085a6eb8&response_type=code&redirect_uri=http://localhost:5173/&show_dialog=true&scope=user-read-private%20user-library-read%20user-read-email%20playlist-read-private%20user-read-recently-played%20user-follow-read%20user-read-playback-state%20user-top-read")
+                (window.location.href = "http://accounts.spotify.com/authorize?client_id=41d86423893746dcaf5c73b7085a6eb8&response_type=code&redirect_uri=https://spotify-profile-visualizer-app.vercel.app/&show_dialog=true&scope=user-read-private%20user-library-read%20user-read-email%20playlist-read-private%20user-read-recently-played%20user-follow-read%20user-read-playback-state%20user-top-read")
+                //(window.location.href = "http://accounts.spotify.com/authorize?client_id=41d86423893746dcaf5c73b7085a6eb8&response_type=code&redirect_uri=http://localhost:5173/&show_dialog=true&scope=user-read-private%20user-library-read%20user-read-email%20playlist-read-private%20user-read-recently-played%20user-follow-read%20user-read-playback-state%20user-top-read")
               }
             >
               Spotify
