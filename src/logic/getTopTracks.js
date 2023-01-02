@@ -13,7 +13,7 @@ export const getTopTracks = async () => {
         },
       };
     
-      const response = await fetch("https://api.spotify.com/v1/me/top/tracks", options);
+      const response = await fetch("https://api.spotify.com/v1/me/top/tracks?limit=50", options);
       const data = await response.json();
 
       return userTopTracks.push(data);

@@ -6,8 +6,9 @@ import { tokenRenewer } from "./tokenRenewer";
 import { tokenChecker } from "./tokenChecker";
 import { getToken } from "./getTokenFromSpotiAPI";
 import { getCode } from "./getCodeFromSearchbar";
+import getPlaylists from "./getPlaylists";
 import getRecentTracks from "./getRecentTracks";
-import { userRecentTracks } from "./dataContainers";
+
 
 export const downloadHandler = async (setLoadingState, setActualPage) => {
   if (localStorage.getItem("spotivisualizer_refresh_token") !== null) {
@@ -17,6 +18,7 @@ export const downloadHandler = async (setLoadingState, setActualPage) => {
       await getTopTracks();
       await getFollowedArtists();
       await getRecentTracks();
+      await getPlaylists();
       return setLoadingState(false);
     } else {
       await tokenRenewer(setLoadingState, setActualPage);
@@ -25,6 +27,7 @@ export const downloadHandler = async (setLoadingState, setActualPage) => {
       await getTopTracks();
       await getFollowedArtists();
       await getRecentTracks();
+      await getPlaylists();
       return setLoadingState(false);
     }
   } else {
@@ -34,6 +37,7 @@ export const downloadHandler = async (setLoadingState, setActualPage) => {
       await getTopTracks();
       await getFollowedArtists();
       await getRecentTracks();
+      await getPlaylists();
       return setLoadingState(false);
     } else {
         setActualPage("Login");

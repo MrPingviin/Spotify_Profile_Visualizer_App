@@ -2,6 +2,7 @@ import _Profile from "./_Profile";
 import Top_Artists from "./Top_Artists";
 import Top_Tracks from "./Top_Tracks";
 import Recent from "./Recent";
+import Playlists from "./Playlists";
 
 const CategoryRouter = ({ actualCategory, setActualPage, setActualCategory }) => {
   switch (actualCategory) {
@@ -13,6 +14,8 @@ const CategoryRouter = ({ actualCategory, setActualPage, setActualCategory }) =>
       return <Top_Tracks />;
     case "Recent":
       return <Recent/>;
+    case "Playlists":
+      return <Playlists/>;
   }
 };
 

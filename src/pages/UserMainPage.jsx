@@ -16,6 +16,7 @@ import LoadingScreen from "../components/interactive/LoadingScreen";
 import { useEffect, useState } from "react";
 import { loginHandler } from "../logic/loginHandler";
 import CategoryRouter from "./CategoryRouter";
+import VerticalCenter from "../components/align/VerticalCenter";
 
 const UserMainPage = ({ setActualPage }) => {
   const [isLoading, setLoadingState] = useState(true);
@@ -24,8 +25,6 @@ const UserMainPage = ({ setActualPage }) => {
   useEffect(() => {
     loginHandler(setLoadingState, setActualPage);
   }, []);
-
-
 
   console.log(
     "Access Token ==> ",
@@ -40,11 +39,15 @@ const UserMainPage = ({ setActualPage }) => {
       <Navbar>
         <Clickable>
           <TotalCenter>
-            <SpotilogoNoText width="60vw" onClick={() => setActualCategory("Home")} />
+            <SpotilogoNoText
+              width="60vw"
+              onClick={() => setActualCategory("Home")}
+            />
           </TotalCenter>
         </Clickable>
 
         <Separator />
+
         <Navitem
           text="Home"
           icon={<AiFillHome className="Navicon" />}
@@ -68,12 +71,28 @@ const UserMainPage = ({ setActualPage }) => {
         <Navitem
           text="Playlists"
           icon={<RiPlayListFill className="Navicon" />}
-          onClick={() => alert("WIP!")}
+          onClick={() => setActualCategory("Playlists")}
         />
-        <Navitem icon={<AiFillGithub className="GitHub" />} onClick={() => window.location.href = "https://github.com/MrPingviin/Spotify_Profile_Visualizer_App/"} />
+        <Navitem
+          icon={<AiFillGithub className="GitHub" />}
+          onClick={() =>
+            (window.location.href =
+              "https://github.com/MrPingviin/Spotify_Profile_Visualizer_App/")
+          }
+        />
+        <Navitem text="Version 0.1a" version="true" />
       </Navbar>
+
       <MainPart>
-        {isLoading ? (<LoadingScreen/>) : <CategoryRouter actualCategory={actualCategory} setActualPage={setActualPage} setActualCategory={setActualCategory}/>}
+        {isLoading ? (
+          <LoadingScreen />
+        ) : (
+          <CategoryRouter
+            actualCategory={actualCategory}
+            setActualPage={setActualPage}
+            setActualCategory={setActualCategory}
+          />
+        )}
       </MainPart>
     </PageContent>
   );
