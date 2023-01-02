@@ -41,7 +41,7 @@
 
 .SongDetails span:nth-child(2) {
     color: #9B9B9B;
-    font-family: Gotham-Light;
+    font-weight: light;
 }
 
 .Length {
