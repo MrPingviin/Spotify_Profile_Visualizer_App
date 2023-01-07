@@ -1,5 +1,5 @@
 # Spotify Visualizer WebApp
-React, Stylized Components, SpotifyAPI
+React, Stylized Components, SpotifyAPI  
 Backend provided by: Spotify
 
 ## Manual / Localhost install
