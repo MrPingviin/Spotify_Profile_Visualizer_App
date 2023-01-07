@@ -1,7 +1,4 @@
 # Spotify Visualizer WebApp
-(React, NodeJS/Express, SpotifyAPI)
-
-# Spotify Visualizer WebApp
 React, Stylized Components, SpotifyAPI
 Backend provided by: Spotify
 
