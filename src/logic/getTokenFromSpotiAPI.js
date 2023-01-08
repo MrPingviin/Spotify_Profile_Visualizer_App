@@ -28,7 +28,6 @@ export const getToken = async (code) => {
 
   if (response.ok) {
     if (response.status === 200 ) {
-      console.log("Token kérés => ", data);
     localStorage.removeItem("spotivisualizer_access_token");
     localStorage.removeItem("spotivisualizer_refresh_token");
 

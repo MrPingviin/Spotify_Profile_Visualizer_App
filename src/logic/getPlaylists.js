@@ -19,7 +19,6 @@ const getPlaylists = async () => {
 
   return (
     userPlaylists.push(data),
-    console.log("PLAYLISTS ==> ", userPlaylists),
     getPlaylistTrackCounts()
   );
 };
@@ -45,10 +44,6 @@ const getPlaylistTrackCounts = async () => {
     await downloadTrackCounts(userPlaylists[0].items[i].tracks.href);
   }
 
-  return console.log(
-    "userPlaylistTrackCounts ======> ",
-    userPlaylistTrackCounts
-  );
 };
 
 export default getPlaylists;

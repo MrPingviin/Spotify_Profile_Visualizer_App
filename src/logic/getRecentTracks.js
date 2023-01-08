@@ -14,7 +14,7 @@ const getRecentTracks = async () => {
       const response = await fetch("https://api.spotify.com/v1/me/player/recently-played", options);
       const data = await response.json();
     
-      return userRecentTracks.push(data.items), console.log("RecentTracks=> ", userRecentTracks);
+      return userRecentTracks.push(data.items);
 
 }
 

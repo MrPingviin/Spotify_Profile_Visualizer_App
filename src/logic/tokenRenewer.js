@@ -37,7 +37,7 @@ export const tokenRenewer = async (setLoadingState, setActualPage) => {
       return downloadHandler(setLoadingState);
     }
   } else {
-    console.log("Hiba az új token lekérése közben! Átirányítás a login felületre..");
+    alert("An error occurred. Please try to login again.");
     setActualPage("Login");
   }
 };
