@@ -26,6 +26,8 @@ const UserMainPage = ({ setActualPage }) => {
     loginHandler(setLoadingState, setActualPage);
   }, []);
 
+  console.clear();
+
   return (
     <PageContent>
       <Navbar>
