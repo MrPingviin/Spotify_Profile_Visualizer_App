@@ -13,7 +13,7 @@ const TopListItem = ({
   short,
   recent,
 }) => {
-  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA =========> ", userTopArtists);
+
   let songCounter = 1;
   let artistCounter = 1;
   if (type == "Artist") {

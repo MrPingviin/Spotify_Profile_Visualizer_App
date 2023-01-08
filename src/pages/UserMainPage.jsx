@@ -26,14 +26,6 @@ const UserMainPage = ({ setActualPage }) => {
     loginHandler(setLoadingState, setActualPage);
   }, []);
 
-  console.log(
-    "Access Token ==> ",
-    localStorage.getItem("spotivisualizer_access_token"),
-    " ",
-    "Refresh Token ==> ",
-    localStorage.getItem("spotivisualizer_refresh_token")
-  );
-
   return (
     <PageContent>
       <Navbar>
