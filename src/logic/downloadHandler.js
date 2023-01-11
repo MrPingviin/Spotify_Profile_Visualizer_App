@@ -41,7 +41,6 @@ export const downloadHandler = async (setLoadingState, setActualPage) => {
       return setLoadingState(false);
     } else {
         setActualPage("Login");
-        alert("Error => There's no way to get a refresh token, please try to login again.")
     }
   }
 
